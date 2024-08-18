@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sherief.com</title>
+    <!-- links CSS -->
+    <link rel="stylesheet" href="public/styles/all.min.css" />
+    <link rel="stylesheet" href="public/styles/fontawesome.min.css" />
+    <link rel="stylesheet" href="public/styles/normaliz.css" />
+    <link rel="stylesheet" href="public/styles/framework.css" />
+    <link rel="stylesheet" href="public/styles/main.css" />
+  </head>
+  <body>
+    <!-- start main-header -->
+    <header>
+      <div class="main-header">
+        <a href="index.html" class="logo fs-25 c-white">Sherief.com</a>
+        <i id="menuIcon" class="menuIcon d-none fa-solid fa-bars fs-25"></i>
+        <nav class="details" id="details">
+          <span
+            class="currency opt-details fs-20"
+            id="open-currency-popup"
+            title="Choose your currency"
+            >EGP</span
+          >
+          <span
+            class="language opt-details fs-20"
+            id="open-language-popup"
+            title="Choose your language"
+            >EN</span
+          >
+          <div id="currency-popup" class="popup hidden">
+            <div class="popup-content">
+              <span id="close-currency-popup" class="close">&times;</span>
+              <h2>Select Currency</h2>
+              <ul>
+                <li><a href="#">USD</a></li>
+                <li><a href="#">EUR</a></li>
+                <li><a href="#">GBP</a></li>
+                <li><a href="#">JPY</a></li>
+                <li><a href="#">CNY</a></li>
+                <li><a href="#">AUD</a></li>
+                <li><a href="#">CAD</a></li>
+                <li><a href="#">CHF</a></li>
+                <li><a href="#">INR</a></li>
+                <li><a href="#">BRL</a></li>
+                <li><a href="#">RUB</a></li>
+                <li><a href="#">ZAR</a></li>
+                <li><a href="#">AED</a></li>
+                <li><a href="#">SAR</a></li>
+                <li><a href="#">SGD</a></li>
+                <li><a href="#">HKD</a></li>
+                <li><a href="#">MXN</a></li>
+                <li><a href="#">KRW</a></li>
+                <li><a href="#">TRY</a></li>
+                <li><a href="#">NGN</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="language-popup" class="popup hidden">
+            <div class="popup-content">
+              <span id="close-language-popup" class="close">&times;</span>
+              <h2>Select Language</h2>
+              <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Arabic</a></li>
+                <li><a href="#">French</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">Chinese</a></li>
+                <li><a href="#">German</a></li>
+                <li><a href="#">Japanese</a></li>
+                <li><a href="#">Russian</a></li>
+                <li><a href="#">Portuguese</a></li>
+                <li><a href="#">Hindi</a></li>
+              </ul>
+            </div>
+          </div>
+          <a
+            href="src/pages/customer-service.html"
+            class="call-us opt-details c-white between-flex fs-20 gap-10"
+          >
+            <span><i class="mr-5 fa-solid fa-headset"></i>Call us </span>
+          </a>
+          <a
+            href="src/pages/user-page.html"
+            class="user-page opt-details c-white between-flex fs-20 gap-10"
+          >
+            <span><i class="mr-5 fa-regular fa-user"></i>Usar Name </span></a
+          >
+        </nav>
+      </div>
+      <!-- Start servs -->
+      <div class="servs">
+        <div class="container">
+          <div class="servs-available">
+            <a href="src/pages/servs-available/flighting.html">
+              <div class="servs-box">
+                <i class="fa-solid fa-plane-departure"></i>
+                <p class="c-black m-0">Flighting</p>
+              </div>
+            </a>
+            <a href="src/pages/servs-available/locational.html">
+              <div class="servs-box">
+                <i class="fa-solid fa-location"></i>
+                <p class="c-black m-0">locational</p>
+              </div>
+            </a>
+            <!-- Start all-srvs -->
+            <button id="myBtn-for-all-servs">All<br />Services</button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close-all-servs">&times;</span>
+                <div class="all-servs">
+                  <a href="src/pages/servs-available/flighting.html">
+                    <div class="servs-box">
+                      <i class="fa-solid fa-plane-departure"></i>
+                      <p class="c-black m-0">Flighting</p>
+                    </div>
+                  </a>
+                  <a href="src/pages/servs-available/locational.html">
+                    <div class="servs-box">
+                      <i class="fa-solid fa-location"></i>
+                      <p class="c-black m-0">locational</p>
+                    </div>
+                  </a>
+                  <a href="src/pages/servs-available/scheduling-01-types-of-tourism.html">
+                    <div class="servs-box">
+                      <i class="fa-solid fa-location"></i>
+                      <p class="c-green m-0">Scheduling</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End all-srvs -->
+          </div>
+        </div>
+      </div>
+      <!-- End servs -->
+    </header>
+    <!-- End main-header -->
+    <!-- Start video-section -->
+    <div class="video-section">
+      <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source
+            src="public/videos/background-mobile.mp4"
+            type="video/mp4"
+            id="video-source"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="content">
+        <h1>Welcome to Tourism In Egypt</h1>
+        <p>This is an your best way to Exploring Egypt.</p>
+      </div>
+    </div>
+    <!-- End video-section -->
+    <!-- Start Programs -->
+    <div class="Programs" id="Programs">
+      <h2 class="main-title">Programs</h2>
+      <div class="container">
+        <div class="One-Month card">
+          <div class="image"><img src="public/images/prog-01.jpg" /></div>
+          <h2>One Month</h2>
+          <div class="Multi types">
+            <h3>Tyeps of Tourism</h3>
+            <ul>
+              <li>Type 1</li>
+              <li>Type 2</li>
+              <li>Type 3</li>
+            </ul>
+          </div>
+          <div class="Multi Citys">
+            <h3>Avilable Cityies</h3>
+            <ul>
+              <li>City 1</li>
+              <li>City 2</li>
+              <li>City 3</li>
+            </ul>
+          </div>
+          <a href="#">More</a>
+        </div>
+        <div class="Two-Month card">
+          <div class="image">
+            <img src="public/images/prog-02.jpg" alt="" />
+          </div>
+          <h2>Two Month</h2>
+          <div class="Multi types">
+            <h3>Tyeps of Tourism</h3>
+            <ul>
+              <li>Type 1</li>
+              <li>Type 2</li>
+              <li>Type 3</li>
+            </ul>
+          </div>
+          <div class="Multi Citys">
+            <h3>Avilable Cityies</h3>
+            <ul>
+              <li>City 1</li>
+              <li>City 2</li>
+              <li>City 3</li>
+            </ul>
+          </div>
+          <a href="#">More</a>
+        </div>
+        <div class="Three-Month card">
+          <div class="image">
+            <img src="public/images/prog-03.jpg" alt="" />
+          </div>
+          <h2>Three Month</h2>
+          <div class="Multi types">
+            <h3>Tyeps of Tourism</h3>
+            <ul>
+              <li>Type 1</li>
+              <li>Type 2</li>
+              <li>Type 3</li>
+            </ul>
+          </div>
+          <div class="Multi Citys">
+            <h3>Avilable Cityies</h3>
+            <ul>
+              <li>City 1</li>
+              <li>City 2</li>
+              <li>City 3</li>
+            </ul>
+          </div>
+          <a href="#">More</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Programs -->
+    <script src="public/scripts/main.js"></script>
+  </body>
+</html>
